@@ -60,7 +60,7 @@ class CsvController extends Controller
                         'title' => 'Data has been uploaded',
                         'email' => Auth::user()->email,
                     ];
-                    dispatch(new SendEmailJob($details));
+                   
                 }
             }
         }
